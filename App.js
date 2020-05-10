@@ -1,6 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { YellowBox, StyleSheet, Text, View } from 'react-native';
 import Colors from './src/constants';
+
+console.disableYellowBox = true;
+console.warn('YellowBox is disabled.');
+YellowBox.ignoreWarnings(['Warning: ...']);
+console.ignoredYellowBox = ['Setting a timer'];
 
 export default function App() {
   return (
